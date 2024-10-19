@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc mừng ngày 20/10</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        h1 {
+            color: #ff1493;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.5em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #ff69b4;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1.3em;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn:hover {
+            background-color: #ff1493;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Hiệu ứng hoa rơi */
+        .flower {
+            position: absolute;
+            top: -10px;
+            width: 50px;
+            height: 50px;
+            background-image: url('https://www.pngmart.com/files/1/Pink-Flower-Transparent-Background.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+
+        /* Tạo nhiều hoa rơi */
+        .flower:nth-child(2) {
+            left: 20%;
+            animation-duration: 7s;
+            animation-delay: 1s;
+        }
+
+        .flower:nth-child(3) {
+            left: 40%;
+            animation-duration: 6s;
+            animation-delay: 3s;
+        }
+
+        .flower:nth-child(4) {
+            left: 60%;
+            animation-duration: 8s;
+            animation-delay: 2s;
+        }
+
+        .flower:nth-child(5) {
+            left: 80%;
+            animation-duration: 9s;
+            animation-delay: 4s;
+        }
+
+        /* Hiệu ứng chuyển động trái tim */
+        .heart {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 50px;
+            color: #ff69b4;
+            animation: beat 1s infinite alternate;
+        }
+
+        @keyframes beat {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Chúc mừng ngày Phụ nữ Việt Nam 20.10</h1>
+        <p>con trai của mẹ mafia internet, ông trùm kéo view số 1 Việt Nam, chúc mẹ 20.10 vui vẻ tươi trẻ, sức khỏe dồi dào, tiền vào như nước, càng ngày càng gặp nhiều may mắn, 83 86, mẹ iu mãi đỉnh mãi đỉnh mãi đỉnh luôn</p>
+        <a href="https://www.facebook.com/thanhthuy.phanthi.9041" class="btn">mẹ của trùm mafia</a>
+    </div>
+
+    <!-- Hiệu ứng hoa rơi -->
+    <div class="flower"></div>
+    <div class="flower"></div>
+    <div class="flower"></div>
+    <div class="flower"></div>
+    <div class="flower"></div>
+
+    <!-- Hiệu ứng trái tim -->
+    <div class="heart">❤️</div>
+
+</body>
+</html>
